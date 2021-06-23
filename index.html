@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="container">
+        <div class="border border-radius banner white d-flex flex-space-between">
+            <h1>
+                ROCK PAPER SCISSORS
+            </h1>
+            <div class="score-group border border-radius text-center">
+                <span>Score</span>
+                <br>
+                <i class="fas fa-star"></i>
+                <div id="points" class="points d-flex flex-space-center align-center">
+                    <span>0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container game">
+        <div class="game-initial">
+            <div class="container-circles">
+                <div class="circles circles-elements">
+                </div>
+            </div>
+        </div>
+        <div class="game-result hidden">
+            <div class="container-circles">
+                <div class="circles circles-in-game">
+                    <div class="text-center player animation">
+                        <div class="circle-component border-paper circle-shadow-paper xl-circle-component">
+                            <img class="img-fluid " src="./images/icon-paper.svg" alt="">
+                        </div>
+                        <h3 class="">You Pick</h3>
+                    </div>
+                    <div class="text-center opponent animation">
+                        <div class="circle-component border-rock circle-shadow-rock xl-circle-component">
+                            <img class="img-fluid" src="./images/icon-rock.svg" alt="">
+                        </div>
+                        <h3>You Pick</h3>
+                    </div>
+                    <div class="text-center result-game">
+                        <h2 class="subtitle">MATCH</h2>
+                        <button class="btn btn-primary" id="reset">PLAY AGAIN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-end  mt-3">
+            <button class="btn btn-initial border-radius" id="btn-modal">RULES</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="modal">
+        <button class="modal-close-btn border-radius pointer" id="close-btn"><i class="fa fa-times"></i></button>
+        <img src="images/image-rules.svg">
+    </div>
+</body>
+<script type="module" src="./js/main.js"></script>
+
+</html>

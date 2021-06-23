@@ -1,0 +1,113 @@
+.container {
+    width: 100%;
+    // padding-right: 15px;
+    // padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media(min-width:576px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+.border-scissors {
+    border-color: $clr-base-Scissors!important;
+}
+
+.border-paper {
+    border-color: $clr-base-Paper!important;
+}
+
+.border-rock {
+    border-color: $clr-base-Rock!important;
+}
+
+.bg-lizard {
+    border-color: $clr-base-Lizard;
+}
+
+.border-radius {
+    border-radius: 1em;
+}
+
+.white {
+    color: white;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.flex-space-around {
+    justify-content: space-around;
+}
+
+.flex-space-evenly {
+    justify-content: space-evenly;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-stretch {
+    align-items: stretch;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.hidden {
+    display: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.mt-1 {
+    margin-top: 1em!important;
+}
+
+.mt-2 {
+    margin-top: 2em!important;
+}
+
+.mt-3 {
+    margin-top: 3em!important;
+}

@@ -1,0 +1,41 @@
+$bg-score: #f8f8f8;
+.circle-component {
+    width: 120px;
+    height: 120px;
+    border: 10px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-score;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    &:active {
+        transform: scale(.9);
+    }
+}
+
+.xl-circle-component {
+    width: 150px;
+    height: 150px;
+}
+
+@media(max-width:680px) {
+    .circle-component {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+.circle-shadow-scissors {
+    box-shadow: 0px 5px 1px $clr-base-Scissors-dark;
+}
+
+.circle-shadow-paper {
+    box-shadow: 0px 5px 1px $clr-base-Paper-dark;
+}
+
+.circle-shadow-rock {
+    box-shadow: 0px 5px 1px $clr-base-Rock-dark;
+}

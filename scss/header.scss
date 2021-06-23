@@ -1,0 +1,38 @@
+$color-shadown: #F39C12;
+$bg-score: #f8f8f8;
+header {
+    max-width: 100%;
+    .banner {
+        h1 {
+            width: 1em;
+            margin-left: 0.5em;
+            // text-shadow: 2px 2px 5px $color-shadown;
+        }
+        i {
+            color: $color-shadown;
+        }
+        .score-group {
+            background-color: $bg-score;
+            color: $clr-bg-base;
+            margin: 0.5em 0;
+            margin-right: 0.5em;
+            span {
+                font-size: 1.5em;
+            }
+            .points {
+                // margin: 0.5em;
+                span {
+                    height: 1em;
+                    font-size: 3em;
+                    padding: 0 1em;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:576px) {
+    .header {
+        max-width: 80%;
+    }
+}

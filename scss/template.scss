@@ -1,0 +1,24 @@
+@import 'colors',
+'font',
+'utilities',
+'./components/circle',
+'./components/buttons',
+'./components/modal',
+'./components/animations',
+'header',
+'body-game';
+.border {
+    border: 1px solid white;
+}
+
+* {
+    // margin: 0;
+    // padding: 0;
+}
+
+body {
+    font-family: 'BarlowSemiCondenseBold';
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, $clr-bg-base 50%, $clr-bg-dark 100%);
+    color: white;
+}
